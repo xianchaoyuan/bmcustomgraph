@@ -5869,7 +5869,7 @@ class QCP_LIB_DECL QCPStatisticalBoxData
 {
 public:
     QCPStatisticalBoxData();
-    QCPStatisticalBoxData(double key, double minimum, double lowerQuartile, double median, double upperQuartile, double maximum, const QVector<double>& outliers=QVector<double>());
+    QCPStatisticalBoxData(double key, double minimum, double lowerQuartile, double median, double upperQuartile, double maximum, const QVector<double> &outliers=QVector<double>());
 
     inline double sortKey() const { return key; }
     inline static QCPStatisticalBoxData fromSortKey(double sortKey) { return QCPStatisticalBoxData(sortKey, 0, 0, 0, 0, 0); }
